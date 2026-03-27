@@ -1,0 +1,52 @@
+update:
+  intervalTicks: 20
+
+tab:
+  headerFooter:
+    enabled: true
+    headerFrames:
+      - "&b&lzTabFusion"
+      - "&fOnline: &b%online%&7/&b%max%"
+    footerFrames:
+      - "&7TPS: &a%tps% &7| Ping: &a%ping%ms"
+      - "&7World: &f%world% &7| XYZ: &f%x% %y% %z%"
+
+  playerListName:
+    enabled: true
+    format: "%prefix%&f%player%%suffix%"
+
+  sorting:
+    enabled: true
+    defaultPriority: 900
+    defaultPrefix: "&7"
+    defaultSuffix: ""
+    groups:
+      - key: owner
+        permission: "group.owner"
+        priority: 1
+        prefix: "&4[Owner] "
+        suffix: ""
+      - key: admin
+        permission: "group.admin"
+        priority: 5
+        prefix: "&c[Admin] "
+        suffix: ""
+      - key: mod
+        permission: "group.mod"
+        priority: 10
+        prefix: "&2[Mod] "
+        suffix: ""
+      - key: vip
+        permission: "group.vip"
+        priority: 50
+        prefix: "&6[VIP] "
+        suffix: ""
+      - key: member
+        permission: ""
+        priority: 100
+        prefix: "&7"
+        suffix: ""
+
+integration:
+  zSupportExtender:
+    enabled: true

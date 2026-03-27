@@ -1,0 +1,18 @@
+name: ztab
+version: 1.0.0
+main: dev.example.ztabfusion.ZTabFusionPlugin
+api-version: '1.19'
+description: Advanced TAB-style plugin with built-in placeholders and cross-version focus
+author: bettergaming716
+softdepend:
+  - zSupportExtender
+commands:
+  ztab:
+    description: ztab control command
+    usage: /ztab [status|reload]
+    aliases:
+      - ztabfusion
+permissions:
+  ztab.admin:
+    description: Allows reloading ztab
+    default: op
